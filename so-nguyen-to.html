@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = prompt("so nguyen to can in ra")
+    let count = 0;
+    let N = 2;
+    let insonguyento ="";
+    for (count; count < number;){
+        let bl = true
+        for (  i = 2; i< N; i++){
+        if (N % i == 0 ){
+            bl = false
+            break;
+        }
+        } if (bl == true){
+            insonguyento+=N + '----',
+                count++;
+            N++;
+        } else {
+            N++;
+        }
+    }
+document.write(insonguyento +
+    '')
+</script>
+
+</body>
+</html>
